@@ -10,7 +10,7 @@ function App() {
   const [to, setTo] = useState('pkr')
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const useCurrencyInfo = useCurrencyInfo(from)
+  const currencyInfo = useCurrencyInfo(from)
   const options = Object.keys(currencyInfo)
 
   const swap = () => {
