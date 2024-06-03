@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useId} from "react";
 
 function InputBox({
     label,
@@ -12,11 +12,13 @@ function InputBox({
     ClassName = "",
 }
 ) {
+    const id = useId()
     return (
         <div className={'bg-white p-3 rounded-lg text-sm flex ${ClassName}'}>
             <div className="w-1-2">
-                <label htmlFor="" ClassName='text-black/40 mb-2 inline-block'></label>
+                <label htmlFor={id} ClassName='text-black/40 mb-2 inline-block'></label>
                 <input
+                    id={id}
                     type="number"
                     className='outline-none w-full bg-transparent py-1.5'
                     placeholder="Amount"
