@@ -42,3 +42,29 @@ const moveCharFoward = (str) => {
 };
 
 console.log(moveCharFoward('abdul'));
+
+
+/* 
+    write a JS program to get the current date.
+*/
+
+const fromatDate = (date = new Date()) => {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+
+}
+
+console.log(fromatDate());
+
+
+/* 
+    javascript program to create a new string adding NEW! in front of a given string. if the string begins with NEW! already then return the orignal.
+
+*/
+
+const addNew = (str) => 
+    str.indexOf('New!') === 0 ? str :  `New! ${str}`;
+
+console.log(addNew('New! Offer'));
