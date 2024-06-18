@@ -68,3 +68,23 @@ const addNew = (str) =>
     str.indexOf('New!') === 0 ? str :  `New! ${str}`;
 
 console.log(addNew('New! Offer'));
+
+/* 
+    custom map function!
+*/
+
+function customMap(array, cb) {
+    const newArray = [];
+    for(i = 0; i < array.length; i++) {
+        newArray.push(cb(array[i]));
+    }
+    return newArray;
+}
+
+const result = customMap([1, 2, 3, 4], (x) => x * 2);
+
+console.log(result);
+
+function customFilter(array, cb) {
+    
+}
