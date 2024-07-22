@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card() {
     return (
-        <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="/">
                 <img className="p-8 rounded-t-lg" src="https://cdn.pixabay.com/photo/2015/05/07/13/43/watch-756487_1280.jpg" alt="product_image1" />
             </a>
