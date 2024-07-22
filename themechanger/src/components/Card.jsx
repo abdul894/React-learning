@@ -4,7 +4,7 @@ export default function Card() {
     return (
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="/">
-                <img className="https://pixabay.com/photos/clock-apple-apple-watch-gadget-756487/" alt="product_image1" />
+                <img className="p-8 rounded-t-lg" src="https://cdn.pixabay.com/photo/2015/05/07/13/43/watch-756487_1280.jpg" alt="product_image1" />
             </a>
             <div className="px-5 pb-5">
                 <a href="/">
