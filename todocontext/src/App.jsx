@@ -5,10 +5,16 @@ import './App.css'
 import { TodoProvider } from './Contexts'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = (todo) => {
+    setTodos((prev) => [ {id: Date.now(), ...todo}, ...prev])
+  }
+
+  
 
   return (
-    <TodoProvider>
+    <TodoProvider value={{todos, addTodo, deleteTodo, updateTodo, toggleComplete}}>
       <div className='bg-blue-500'>Hello world</div>
     </TodoProvider>
   )
