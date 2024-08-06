@@ -16,6 +16,10 @@ function App() {
       === todo.id ? todo : prevTodo)))
   }
 
+  const deleteTodo = (id) => {
+    setTodos((prev) => prev.filter((todo) => todo.id !== id))
+  }
+
   return (
     <TodoProvider value={{todos, addTodo, deleteTodo, updateTodo, toggleComplete}}>
       <div className='bg-blue-500'>Hello world</div>
