@@ -11,7 +11,10 @@ function App() {
     setTodos((prev) => [ {id: Date.now(), ...todo}, ...prev])
   }
 
-  
+  const updateTodo = (id, todo) => {
+    setTodos((prev) => prev.map((prevTodo) => (prevTodo.id 
+      === todo.id ? todo : prevTodo)))
+  }
 
   return (
     <TodoProvider value={{todos, addTodo, deleteTodo, updateTodo, toggleComplete}}>
